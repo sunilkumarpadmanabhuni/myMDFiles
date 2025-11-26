@@ -1,53 +1,54 @@
 ```mermaid
+```mermaid
 graph TB
     subgraph "Entry Point - Azure Front Services"
-        AFD["Azure Front Door<br>━━━━━━━━━━━━━━━<br>&#8226; Global Load Balancer<br>&#8226; SSL/TLS Termination<br>&#8226; WAF Protection<br>&#8226; DDoS Protection<br>&#8226; URL Routing<br>&#8226; Health Probes"]
+        AFD["<img src='https://code.benco.io/icon-collection/azure-icons/Front-Doors.svg' width='20' style='vertical-align:middle'/> Azure Front Door<br>━━━━━━━━━━━━━━━<br>&#8226; Global Load Balancer<br>&#8226; SSL/TLS Termination<br>&#8226; WAF Protection<br>&#8226; DDoS Protection<br>&#8226; Edge Caching"]
         
-        CDN["Azure CDN<br>━━━━━━━━━━━━━━━<br>&#8226; Static Content<br>&#8226; Image Optimization<br>&#8226; Global Distribution<br>&#8226; Cache Rules"]
+        CDN["<img src='https://code.benco.io/icon-collection/azure-icons/CDN-Profiles.svg' width='20' style='vertical-align:middle'/> Azure CDN<br>━━━━━━━━━━━━━━━<br>&#8226; Static Content<br>&#8226; Image Optimization<br>&#8226; Global Distribution<br>&#8226; Cache Rules"]
     end
     
     subgraph "API Gateway Layer"
-        APIM["Azure API Management<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; API Gateway<br>&#8226; Rate Limiting<br>&#8226; API Versioning<br>&#8226; OAuth Integration<br>&#8226; Developer Portal<br>&#8226; Analytics"]
+        APIM["<img src='https://code.benco.io/icon-collection/azure-icons/API-Management-Services.svg' width='20' style='vertical-align:middle'/> Azure API Management<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; API Gateway<br>&#8226; Rate Limiting<br>&#8226; API Versioning<br>&#8226; OAuth Integration"]
     end
     
     subgraph "Identity & Security"
-        AAD["Azure AD B2C<br>━━━━━━━━━━━━━━━<br>&#8226; Customer Identity<br>&#8226; Social Login<br>&#8226; MFA<br>&#8226; Custom Policies"]
+        AAD["<img src='https://code.benco.io/icon-collection/azure-icons/Azure-AD-B2C.svg' width='20' style='vertical-align:middle'/> Azure AD B2C<br>━━━━━━━━━━━━━━━<br>&#8226; Customer Identity<br>&#8226; Social Login<br>&#8226; MFA<br>&#8226; Custom Policies"]
         
-        KV["Key Vault<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Secrets<br>&#8226; Certificates<br>&#8226; Keys<br>&#8226; HSM Support"]
+        KV["<img src='https://code.benco.io/icon-collection/azure-icons/Key-Vaults.svg' width='20' style='vertical-align:middle'/> Key Vault<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Secrets<br>&#8226; Certificates<br>&#8226; Keys<br>&#8226; HSM Support"]
     end
     
     subgraph "Compute - AKS Cluster"
-        AKS["Azure Kubernetes Service<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; 3-5 Node Pool<br>&#8226; Auto-scaling<br>&#8226; Pod Security<br>&#8226; Helm Charts"]
+        AKS["<img src='https://code.benco.io/icon-collection/azure-icons/Kubernetes-Services.svg' width='20' style='vertical-align:middle'/> Azure Kubernetes Service<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; 3-5 Node Pool<br>&#8226; Auto-scaling<br>&#8226; Pod Security<br>&#8226; Helm Charts"]
         
-        ACR["Container Registry<br>━━━━━━━━━━━━━━━<br>&#8226; Docker Images<br>&#8226; Vulnerability Scan<br>&#8226; Geo-replication"]
+        ACR["<img src='https://code.benco.io/icon-collection/azure-icons/Container-Registries.svg' width='20' style='vertical-align:middle'/> Container Registry<br>━━━━━━━━━━━━━━━<br>&#8226; Docker Images<br>&#8226; Vulnerability Scan<br>&#8226; Geo-replication"]
     end
     
     subgraph "Data Tier - Azure SQL"
-        SQL["Azure SQL Database<br>━━━━━━━━━━━━━━━<br>Business Critical Tier<br>&#8226; 4 vCores<br>&#8226; Zone Redundant<br>&#8226; Auto Backup<br>&#8226; Point-in-time Restore<br>&#8226; Read Scale-out"]
+        SQL["<img src='https://code.benco.io/icon-collection/azure-icons/SQL-Databases.svg' width='20' style='vertical-align:middle'/> Azure SQL Database<br>━━━━━━━━━━━━━━━<br>Business Critical Tier<br>&#8226; 4 vCores<br>&#8226; Zone Redundant<br>&#8226; Auto Backup<br>&#8226; Point-in-time Restore"]
         
-        REDIS["Azure Cache for Redis<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; 6GB Cache<br>&#8226; Persistence<br>&#8226; Clustering<br>&#8226; Geo-replication"]
+        REDIS["<img src='https://code.benco.io/icon-collection/azure-icons/Cache-Redis.svg' width='20' style='vertical-align:middle'/> Azure Cache for Redis<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; 6GB Cache<br>&#8226; Persistence<br>&#8226; Clustering<br>&#8226; Geo-replication"]
         
-        STORAGE["Azure Storage Account<br>━━━━━━━━━━━━━━━<br>&#8226; Blob Storage Hot<br>&#8226; File Share<br>&#8226; Queue Storage<br>&#8226; Encryption at Rest"]
+        STORAGE["<img src='https://code.benco.io/icon-collection/azure-icons/Storage-Accounts.svg' width='20' style='vertical-align:middle'/> Azure Storage Account<br>━━━━━━━━━━━━━━━<br>&#8226; Blob Storage Hot<br>&#8226; File Share<br>&#8226; Queue Storage<br>&#8226; Encryption at Rest"]
     end
     
     subgraph "Messaging & Events"
-        SB["Service Bus<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Queues<br>&#8226; Topics Subscriptions<br>&#8226; Dead Letter<br>&#8226; Duplicate Detection"]
+        SB["<img src='https://code.benco.io/icon-collection/azure-icons/Service-Bus.svg' width='20' style='vertical-align:middle'/> Service Bus<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Queues<br>&#8226; Topics Subscriptions<br>&#8226; Dead Letter<br>&#8226; Duplicate Detection"]
         
-        EG["Event Grid<br>━━━━━━━━━━━━━━━<br>&#8226; Event Routing<br>&#8226; Pub Sub<br>&#8226; Cloud Events"]
+        EG["<img src='https://code.benco.io/icon-collection/azure-icons/Event-Grid-Domains.svg' width='20' style='vertical-align:middle'/> Event Grid<br>━━━━━━━━━━━━━━━<br>&#8226; Event Routing<br>&#8226; Pub Sub<br>&#8226; Cloud Events"]
     end
     
     subgraph "Integration Services"
-        FUNC["Azure Functions<br>━━━━━━━━━━━━━━━<br>Premium Plan<br>&#8226; .NET 8 Isolated<br>&#8226; Event Triggers<br>&#8226; VNET Integration"]
+        FUNC["<img src='https://code.benco.io/icon-collection/azure-icons/Function-Apps.svg' width='20' style='vertical-align:middle'/> Azure Functions<br>━━━━━━━━━━━━━━━<br>Premium Plan<br>&#8226; .NET 8 Isolated<br>&#8226; Event Triggers<br>&#8226; VNET Integration"]
         
-        LOGIC["Logic Apps<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; Email Connector<br>&#8226; SMS Connector<br>&#8226; ERP Integration"]
+        LOGIC["<img src='https://code.benco.io/icon-collection/azure-icons/Logic-Apps.svg' width='20' style='vertical-align:middle'/> Logic Apps<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; Email Connector<br>&#8226; SMS Connector<br>&#8226; ERP Integration"]
     end
     
     subgraph "Monitoring & DevOps"
-        AI["Application Insights<br>━━━━━━━━━━━━━━━<br>&#8226; APM<br>&#8226; Live Metrics<br>&#8226; Alerts<br>&#8226; Distributed Tracing"]
+        AI["<img src='https://code.benco.io/icon-collection/azure-icons/Application-Insights.svg' width='20' style='vertical-align:middle'/> Application Insights<br>━━━━━━━━━━━━━━━<br>&#8226; APM<br>&#8226; Live Metrics<br>&#8226; Alerts<br>&#8226; Distributed Tracing"]
         
-        LA["Log Analytics<br>━━━━━━━━━━━━━━━<br>&#8226; KQL Queries<br>&#8226; Workbooks<br>&#8226; Dashboards"]
+        LA["<img src='https://code.benco.io/icon-collection/azure-icons/Log-Analytics.svg' width='20' style='vertical-align:middle'/> Log Analytics<br>━━━━━━━━━━━━━━━<br>&#8226; KQL Queries<br>&#8226; Workbooks<br>&#8226; Dashboards"]
         
-        ADO["Azure DevOps<br>━━━━━━━━━━━━━━━<br>&#8226; Git Repos<br>&#8226; CI CD Pipelines<br>&#8226; Artifacts<br>&#8226; Test Plans"]
+        ADO["<img src='https://code.benco.io/icon-collection/azure-icons/Azure-DevOps.svg' width='20' style='vertical-align:middle'/> Azure DevOps<br>━━━━━━━━━━━━━━━<br>&#8226; Git Repos<br>&#8226; CI CD Pipelines<br>&#8226; Artifacts<br>&#8226; Test Plans"]
     end
     
     AFD --> APIM
@@ -82,4 +83,5 @@ graph TB
     style REDIS fill:#dc382d,stroke:#fff,stroke-width:2px,color:#fff
     style SB fill:#59b4d9,stroke:#fff,stroke-width:2px,color:#fff
     style AI fill:#68217a,stroke:#fff,stroke-width:2px,color:#fff
+```
 ```
