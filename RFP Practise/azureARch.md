@@ -1,5 +1,4 @@
 ```mermaid
-```mermaid
 graph TB
     subgraph "Entry Point - Azure Front Services"
         AFD["<img src='https://code.benco.io/icon-collection/azure-icons/Front-Doors.svg' width='20' style='vertical-align:middle'/> Azure Front Door<br>━━━━━━━━━━━━━━━<br>&#8226; Global Load Balancer<br>&#8226; SSL/TLS Termination<br>&#8226; WAF Protection<br>&#8226; DDoS Protection<br>&#8226; Edge Caching"]
@@ -83,5 +82,4 @@ graph TB
     style REDIS fill:#dc382d,stroke:#fff,stroke-width:2px,color:#fff
     style SB fill:#59b4d9,stroke:#fff,stroke-width:2px,color:#fff
     style AI fill:#68217a,stroke:#fff,stroke-width:2px,color:#fff
-```
 ```
