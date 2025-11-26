@@ -1,53 +1,53 @@
 ```mermaid
 graph TB
     subgraph "Entry Point - Azure Front Services"
-        AFD[☁️ Azure Front Door<br/>━━━━━━━━━━━━━━━<br/>• Global Load Balancer<br/>• SSL/TLS Termination<br/>• WAF Protection<br/>• DDoS Protection<br/>• URL Routing<br/>• Health Probes]
+        AFD["Azure Front Door<br>━━━━━━━━━━━━━━━<br>&#8226; Global Load Balancer<br>&#8226; SSL/TLS Termination<br>&#8226; WAF Protection<br>&#8226; DDoS Protection<br>&#8226; URL Routing<br>&#8226; Health Probes"]
         
-        CDN[🌍 Azure CDN<br/>━━━━━━━━━━━━━━━<br/>• Static Content<br/>• Image Optimization<br/>• Global Distribution<br/>• Cache Rules]
+        CDN["Azure CDN<br>━━━━━━━━━━━━━━━<br>&#8226; Static Content<br>&#8226; Image Optimization<br>&#8226; Global Distribution<br>&#8226; Cache Rules"]
     end
     
     subgraph "API Gateway Layer"
-        APIM[⚡ Azure API Management<br/>━━━━━━━━━━━━━━━<br/>Premium Tier<br/>• API Gateway<br/>• Rate Limiting<br/>• API Versioning<br/>• OAuth Integration<br/>• Developer Portal<br/>• Analytics]
+        APIM["Azure API Management<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; API Gateway<br>&#8226; Rate Limiting<br>&#8226; API Versioning<br>&#8226; OAuth Integration<br>&#8226; Developer Portal<br>&#8226; Analytics"]
     end
     
     subgraph "Identity & Security"
-        AAD[🔐 Azure AD B2C<br/>━━━━━━━━━━━━━━━<br/>• Customer Identity<br/>• Social Login<br/>• MFA<br/>• Custom Policies]
+        AAD["Azure AD B2C<br>━━━━━━━━━━━━━━━<br>&#8226; Customer Identity<br>&#8226; Social Login<br>&#8226; MFA<br>&#8226; Custom Policies"]
         
-        KV[🔑 Key Vault<br/>━━━━━━━━━━━━━━━<br/>Premium Tier<br/>• Secrets<br/>• Certificates<br/>• Keys<br/>• HSM Support]
+        KV["Key Vault<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Secrets<br>&#8226; Certificates<br>&#8226; Keys<br>&#8226; HSM Support"]
     end
     
     subgraph "Compute - AKS Cluster"
-        AKS[🐳 Azure Kubernetes Service<br/>━━━━━━━━━━━━━━━<br/>Standard Tier<br/>• 3-5 Node Pool<br/>• Auto-scaling<br/>• Pod Security<br/>• Helm Charts]
+        AKS["Azure Kubernetes Service<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; 3-5 Node Pool<br>&#8226; Auto-scaling<br>&#8226; Pod Security<br>&#8226; Helm Charts"]
         
-        ACR[📦 Container Registry<br/>━━━━━━━━━━━━━━━<br/>• Docker Images<br/>• Vulnerability Scan<br/>• Geo-replication]
+        ACR["Container Registry<br>━━━━━━━━━━━━━━━<br>&#8226; Docker Images<br>&#8226; Vulnerability Scan<br>&#8226; Geo-replication"]
     end
     
     subgraph "Data Tier - Azure SQL"
-        SQL[💾 Azure SQL Database<br/>━━━━━━━━━━━━━━━<br/>Business Critical Tier<br/>• 4 vCores<br/>• Zone Redundant<br/>• Auto Backup<br/>• Point-in-time Restore<br/>• Read Scale-out]
+        SQL["Azure SQL Database<br>━━━━━━━━━━━━━━━<br>Business Critical Tier<br>&#8226; 4 vCores<br>&#8226; Zone Redundant<br>&#8226; Auto Backup<br>&#8226; Point-in-time Restore<br>&#8226; Read Scale-out"]
         
-        REDIS[⚡ Azure Cache for Redis<br/>━━━━━━━━━━━━━━━<br/>Premium Tier<br/>• 6GB Cache<br/>• Persistence<br/>• Clustering<br/>• Geo-replication]
+        REDIS["Azure Cache for Redis<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; 6GB Cache<br>&#8226; Persistence<br>&#8226; Clustering<br>&#8226; Geo-replication"]
         
-        STORAGE[📁 Azure Storage Account<br/>━━━━━━━━━━━━━━━<br/>• Blob Storage (Hot)<br/>• File Share<br/>• Queue Storage<br/>• Encryption at Rest]
+        STORAGE["Azure Storage Account<br>━━━━━━━━━━━━━━━<br>&#8226; Blob Storage Hot<br>&#8226; File Share<br>&#8226; Queue Storage<br>&#8226; Encryption at Rest"]
     end
     
     subgraph "Messaging & Events"
-        SB[📨 Service Bus<br/>━━━━━━━━━━━━━━━<br/>Premium Tier<br/>• Queues<br/>• Topics/Subscriptions<br/>• Dead Letter<br/>• Duplicate Detection]
+        SB["Service Bus<br>━━━━━━━━━━━━━━━<br>Premium Tier<br>&#8226; Queues<br>&#8226; Topics Subscriptions<br>&#8226; Dead Letter<br>&#8226; Duplicate Detection"]
         
-        EG[⚡ Event Grid<br/>━━━━━━━━━━━━━━━<br/>• Event Routing<br/>• Pub/Sub<br/>• Cloud Events]
+        EG["Event Grid<br>━━━━━━━━━━━━━━━<br>&#8226; Event Routing<br>&#8226; Pub Sub<br>&#8226; Cloud Events"]
     end
     
     subgraph "Integration Services"
-        FUNC[⚙️ Azure Functions<br/>━━━━━━━━━━━━━━━<br/>Premium Plan<br/>• .NET 8 Isolated<br/>• Event Triggers<br/>• VNET Integration]
+        FUNC["Azure Functions<br>━━━━━━━━━━━━━━━<br>Premium Plan<br>&#8226; .NET 8 Isolated<br>&#8226; Event Triggers<br>&#8226; VNET Integration"]
         
-        LOGIC[🔄 Logic Apps<br/>━━━━━━━━━━━━━━━<br/>Standard Tier<br/>• Email Connector<br/>• SMS Connector<br/>• ERP Integration]
+        LOGIC["Logic Apps<br>━━━━━━━━━━━━━━━<br>Standard Tier<br>&#8226; Email Connector<br>&#8226; SMS Connector<br>&#8226; ERP Integration"]
     end
     
     subgraph "Monitoring & DevOps"
-        AI[📊 Application Insights<br/>━━━━━━━━━━━━━━━<br/>• APM<br/>• Live Metrics<br/>• Alerts<br/>• Distributed Tracing]
+        AI["Application Insights<br>━━━━━━━━━━━━━━━<br>&#8226; APM<br>&#8226; Live Metrics<br>&#8226; Alerts<br>&#8226; Distributed Tracing"]
         
-        LA[📋 Log Analytics<br/>━━━━━━━━━━━━━━━<br/>• KQL Queries<br/>• Workbooks<br/>• Dashboards]
+        LA["Log Analytics<br>━━━━━━━━━━━━━━━<br>&#8226; KQL Queries<br>&#8226; Workbooks<br>&#8226; Dashboards"]
         
-        ADO[🚀 Azure DevOps<br/>━━━━━━━━━━━━━━━<br/>• Git Repos<br/>• CI/CD Pipelines<br/>• Artifacts<br/>• Test Plans]
+        ADO["Azure DevOps<br>━━━━━━━━━━━━━━━<br>&#8226; Git Repos<br>&#8226; CI CD Pipelines<br>&#8226; Artifacts<br>&#8226; Test Plans"]
     end
     
     AFD --> APIM
