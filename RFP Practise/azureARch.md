@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "Entry Point - Azure Front Services"
         AFD[☁️ Azure Front Door<br/>━━━━━━━━━━━━━━━<br/>• Global Load Balancer<br/>• SSL/TLS Termination<br/>• WAF Protection<br/>• DDoS Protection<br/>• URL Routing<br/>• Health Probes]
@@ -81,3 +82,4 @@ graph TB
     style REDIS fill:#dc382d,stroke:#fff,stroke-width:2px,color:#fff
     style SB fill:#59b4d9,stroke:#fff,stroke-width:2px,color:#fff
     style AI fill:#68217a,stroke:#fff,stroke-width:2px,color:#fff
+```
